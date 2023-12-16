@@ -43,3 +43,10 @@ PUT _slm/policy/nightly-snapshots
   }
 }
 ```
+
+6. Restore Index
+```shell
+GET _snapshot/az_repo/*?verbose=false
+
+POST _snapshot/az_repo/nightly-snap-2023.12.16-b_ifd5itqfemiwskerzxpw/_restore
+```
