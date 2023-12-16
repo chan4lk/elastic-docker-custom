@@ -19,6 +19,10 @@ spec:
       maxUnavailable: 25%
     type: RollingUpdate
   template:
+    metadata:
+      labels:
+        io.kompose.network/workxflow-network: "true"
+        io.kompose.service: kibana
     spec:
       containers:
       - env:
