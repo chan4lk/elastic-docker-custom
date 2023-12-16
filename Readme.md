@@ -1,7 +1,7 @@
 # Custom Elastic Search Image with Azure Repository
 
 1. Elastic Username : `elastic`
-1. Elastic Password : `XdQrejJIMasJZyyw4KQl`
+2. Elastic Password : `XdQrejJIMasJZyyw4KQl`
 
 3. Create Repo
 
@@ -52,4 +52,14 @@ POST _snapshot/az_repo/nightly-snap-2023.12.16-b_ifd5itqfemiwskerzxpw/_restore
 {
   "indices": "test"
 }
+```
+
+7. Create keystore file
+
+Run following command in a local elastic search app folder.
+
+```shell
+bin/elasticsearch-keystore create
+bin/elasticsearch-keystore add azure.client.default.account
+bin/elasticsearch-keystore add azure.client.default.key
 ```
