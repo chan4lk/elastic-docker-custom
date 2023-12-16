@@ -47,7 +47,7 @@ spec:
             secretKeyRef:
               key: password
               name: elasticsearch-credentials
-        image: localhost:5000/elasticsearch-custom
+        image: localhost:6000/elasticsearch-custom
         imagePullPolicy: IfNotPresent
         name: elasticsearch
         ports:
