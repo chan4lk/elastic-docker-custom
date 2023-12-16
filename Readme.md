@@ -49,4 +49,7 @@ PUT _slm/policy/nightly-snapshots
 GET _snapshot/az_repo/*?verbose=false
 
 POST _snapshot/az_repo/nightly-snap-2023.12.16-b_ifd5itqfemiwskerzxpw/_restore
+{
+  "indices": "test"
+}
 ```
